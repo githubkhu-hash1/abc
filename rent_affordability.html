@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vehicle Affordability</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Dosis&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            body{
+                font-family: 'Barlow Condensed', sans-serif;
+                font-family: 'Dosis', sans-serif;
+                width:100%; 
+                overflow-x:hidden;
+                color: rgb(79, 112, 156);
+                background-color:rgb(240, 240, 240);
+            }
+
+            span{
+                color: rgb(223, 65, 65);;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                z-index: 1;
+                justify-content: space-between;
+                overflow: auto;
+                background-color: rgb(33, 53, 85);
+                width: 100%;
+                margin: 0;
+                position: fixed;
+                height: 80px;
+            }
+
+            nav h1{
+                padding-left: 20px;
+                color: white
+                font-family:'Dosis', sans-serif;
+
+            }
+            nav ul{
+                padding-right: 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav ul li{
+                font-size: 14px;
+                padding: 10px;
+                list-style-type: none;
+            }
+
+            nav ul a{
+                color: white;
+                transition: 0.3s;
+            }
+
+            nav ul a:hover{
+                font-size: 23px;
+                color: rgb(79, 112, 156);
+                transition: 0.3s;
+            }
+
+            #main-text{
+                padding:200px 200px 100px 200px;
+            
+            }
+
+            .main-text{
+                font-size: 130%;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                margin: 30px;
+                text-align: center;
+                font-weight: bolder;
+            }      
+            
+            #tool{
+                margin: 60px;
+                padding: 50px;
+                color: white;
+                background-color: rgb(33, 53, 85);
+                border-radius: 10px;
+                justify-content: center;
+                padding-left: 20%;
+                
+            }
+
+            label{
+                width: 40%;
+                display: inline-block;
+            }
+
+            #about-us{
+                margin: 0;
+                padding-top: 200px;
+                padding: 100px;
+            }
+
+            .about-us{
+                text-align: center;
+                background-color:rgb(33, 53, 85) ;
+                border-radius: 10px;
+                color: white;
+                box-shadow: 15px 4px white, -15px -4px black;
+            }
+
+            .about-us-text{
+                padding: 40px;
+            }
+
+            
+            #contact-us{
+                background-color:  rgb(33, 53, 85);
+                padding: 30px;
+                align-items: left;
+                text-align: left;
+                color: white;
+            }
+            #contact-content{
+                display: flex;
+            }
+            #contact-us ul li{
+                list-style: none;
+            }
+
+            footer{
+                height: 90px;
+                background-color: rgb(39, 37, 37);
+            }
+
+            #footer{
+                display: flex;
+                height: 100%;
+                align-items: center;
+                right: 0;
+                width:100%;
+            }
+
+            #cptext{
+                width: 50%;
+                font-family:Ubuntu, sans-serif ;
+                padding-left:40px ;
+                color: white;
+            }
+                
+            #sociolink{
+                width: 50%;
+                padding-right: 40px;
+                text-align: right;
+                font-size: 175%;
+                transition: 0.3s;
+            }
+            
+            #sociolink a{
+                transition: 0.3s;
+            }
+        
+            #sociolink a:hover{
+                font-size: 200%;
+                transition: 0.3s;
+                color: white;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h1><span>Fina</span>Tips</h1>
+            <ul>
+                <li><a href=#about-us>About Us</a></li>
+                <li><a href=#toolhead>Tool</a></li>
+                <li><a href=#contact-us>Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-text">
+            <div class="main-text">
+                <h1>Rent Affordability</h1>
+                <p>This is our rent affordability tool! It assesses your finances to determine if you can afford a rental property. By analyzing your monthly income, it suggests that your monthly rent costs should not exceed 30% of your gross monthly income, helping you make informed decisions about buying a property.</p>
+                
+            </div>             
+        </div>
+
+        <h1 id="toolhead"style="text-align: center;font-size: 250%;">Tool</h1>
+
+        <div id="tool">
+            <form>
+            <label for="income">Monthly income :</label>
+            <input type="text" id="income" name="income"><br><br> 
+            <button id="bt">Click</button>
+            </form>
+            <p id="output"></p>
+            
+
+        </div>
+
+
+        
+
+        <div id="about-us">
+            <div class="about-us">
+                <div class="about-us-text">
+                    <h1 style="font-size: 200%;">ABOUT US</h1>
+                    <p style="font-size: 140%;">This is FinaTips, your dependable resource for finance management. Through creative solutions FinaTips is committed to assisting individuals, families, and businesses in achieving their financial goals.At FinaTips, our goal is to give you the tools like vehicle/property and loan finance tools you need to manage your money and protect your future finances. A successful and prosperous life, in our opinion, is built on excellent financial management. We're here to help you succeed in today's dynamic economic environment by giving you the information, resources, and tailored tactics you need on our website.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-us">
+            <h3><b>Contact Details</b></h3>
+            <div id="contact-content">    
+                <div style="width: 50%;">
+                    <ul>
+                        <li><span>Fina</span>Tips</li>
+                        <li>+91 XXXXXXXXXX</li>
+                        <li>xyz@gmail.com</li>
+                    </ul>
+                </div>   
+                <div style="width: 50%;">
+                    <ul>
+                        <li>DNO: XXX XXXX <br> XXXX XXX XXXX <br> Chennai <br> TamilNadu - 600XXX</li>
+
+                    </ul>
+                </div>  
+            </div>         
+        </div>
+
+        <footer >
+            <div id="footer">
+                <div id="cptext">
+                    <p>This site &copy; 2023 <span>Fina</span>Tips
+                    </p>
+                </div>
+                <div id="sociolink">
+                    <a href="#" style="color:#4175db" class="fa fa-facebook"></a>
+                    <a href="#" style="color:rgb(134, 25, 67)" class="fa fa-instagram"></a>
+                    <a href="#" style="color: white;"class="fa fa-twitter"></a>
+    
+                </div>
+    
+            </div>
+    
+        </footer>
+
+    </body>
+</html>
